@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  align-items: center;
+  color: #aa7a7a;
+
+}
+
+/*h1 {
+   align-items: center;
+    color: rgb(108, 195, 220);
+  }*/
+
+.TituloUno {
+  text-align: center;
+  background-color: #96afb1;
+}
+
+.Imagen1 {
+  width: 950px;
+  height: 500px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding-top: 20px;
+}
+
+.Imagen2 {
+  width: 730px;
+  height: 500px;
+  padding: 10px;
+}
+
+.seccion2 {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  padding-top: 20px;
+
+}
+
+h4 {
+  text-align: center;
+  background-color: aqua;
+  font-size: 10px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.video {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+iframe {
+  padding: 10px;
+
+
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-1500%);
+  }
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.footer {
+  background-color: hwb(149 11% 33%);
+  color: #b3d3d3;
+  padding: 20px 0;
+}
+
+.contenedor-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes-sociales {
+  display: flex;
+  align-items: center;
+  color: hwb(160 29% 55%);
+}
+
+.redes-sociales a {
+  margin: 0 10px;
+  font-size: 30px;
+  color: #4423bc;
+  transition: all 0.3s ease-in-out;
+}
+
+.redes-sociales a:hover {
+  color: #222a37;
+}
+
+.RedesSociales {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.RedesSociales a img {
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-footer {
+    flex-direction: column;
+  }
+
+  .redes-sociales {
+    margin-bottom: 10px;
+  }
+
+  nav a:hover {
+    color: #b3d3d3
+  }
+}
+
+@media (max-width: 700px) {
+
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 10px opx;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Imagen1 {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Imagen2 {
+    width: 100%;
+    height: 20vh;
+    
+  }
+  .seccion2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
