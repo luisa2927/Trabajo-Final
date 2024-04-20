@@ -13,10 +13,17 @@ const puerto = 9000
 dotenv.config();
 
 
-
 // ESTABLECER CONECCION CON NUESTRO INDEX HTML
+const rutaPublica = path.join(process.cwd(), 
+"public");
+app.use(express.static(rutaPublica));
 
+app.use(express.json());
 
+//Especificamos que vamos a caceder a index.html
+app.get("/", (req, res) => {
+    res.sendFile(path.join(rutaPublica,"index.html"));
+});
 //4. INICIALIZAR NUESTRO SERVIDOR
 
 
