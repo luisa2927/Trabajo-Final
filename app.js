@@ -2,7 +2,7 @@
 import express from "express";
 import path from "path";
 import dotenv from "dotenv";
-
+ import conexionMongo from "./src/config/baseDatos.js";
 
 
 //2. CONFIGURAR NUESTRO SERVIDOR
@@ -11,6 +11,7 @@ const puerto = 9000
 
 //2.1 CONFIGURAR LAS VARIABLE DE ENTORNOS
 dotenv.config();
+conexionMongo();
 
 
 // ESTABLECER CONECCION CON NUESTRO INDEX HTML
