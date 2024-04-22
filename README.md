@@ -1,3 +1,3 @@
 ##  TITULO: Psicosalud
-## descripcion
-## Autor
+## DESCRIPCION:Psicosalud es una pagina web donde se podra encontrar informacio relacionada con la atencion psicologica desde la prespectiva de la salud y la enfermedad.
+## AUTOR: Luis Adrian Osorio Gomez
