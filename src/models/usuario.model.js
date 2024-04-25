@@ -11,15 +11,15 @@ const schema = mongoose.Schema;
 const usuarioSchema = new schema({
     nombreCompleto:{
         type: String,
-        required: true
+       // required: true
     },
     correo:{
         type:String,
-        required: true
+        //required: true
     },
     contrasena:{
         type:String,
-        required:true
+        //required:true
     }
 
 });
