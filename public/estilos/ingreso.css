@@ -4,13 +4,13 @@
     --login-bg:#f8f3ff;
     --title-bg: #9089cc;
     --button-bg: #674baf;
-    --light-pink: #e882e8;
+    --light-pink: #fff;
 }
 
 body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: linear-gradient(to top, #5e45a1 0%, #fff 100%);
 }
 
 .login__container {
