@@ -10,9 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
-    
     <link rel="stylesheet" href="./estilos/registro.css">
-    <title>Hello, world!</title>
+    <title>registro</title>
+    <!--link de mi archivo js-->
+    <script src="./scrits/registro.js" defer>
+    </script>
+  </head>
+
   </head>
   <body>
     <header>
@@ -48,7 +52,7 @@
    <section class="contact-box">
        <div class="row no-gutters bg-dark">
            <div class="col-xl-5 col-lg-12 register-bg">
-            <div class="position-absolute testiomonial p-4">
+            <div class="position-absolute top-50 start-0 translate-middle mt-5">
                 <h3 class="font-weight-bold text-dark">Psicosalud Atencion Personalizada.</h3>
                 <p class="lead text-dark">Contamos con un equipo de profesionales altamente capacitados.</p>
             </div>
@@ -56,30 +60,25 @@
            <div class="col-xl-7 col-lg-12 d-flex">
                 <div class="container align-self-center p-6">
                     <h1 class="font-weight-bold mb-3">Crea tu cuenta gratis</h1>
-                    <div class="form-group">
-                        <button class="btn btn-outline-dark d-inline-block text-light mr-2 mb-3 width-100"><i class="icon ion-logo-google lead align-middle mr-2"></i> Google </button>
-                        <button class="btn btn-outline-dark d-inline-block text-light mb-3 width-100"><i class="icon ion-logo-facebook lead align-middle mr-2"></i> Facebook</button>
-                    </div>
+                    
                     <p class="text-muted mb-5">Ingresa la siguiente información para registrarte.</p>
 
                     <form>
                         <div class="form-row mb-2">
                             <div class="form-group col-md-6">
-                                <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" placeholder="Tu nombre">
+                                <label class="font-weight-bold">Nombre Completo <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" placeholder="Ingrese tu nombre
+                              "id="nonbreCompleto"/>
                             </div>
-                            <div class="form-group col-md-6">
-                                <label class="font-weight-bold">Apellido <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" placeholder="Tu apellido">
-                            </div>
+                            
                         </div>
                         <div class="form-group mb-3">
                             <label class="font-weight-bold">Correo electrónico <span class="text-danger">*</span></label>
-                            <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico">
+                            <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico" id="correo"/>
                         </div>
                         <div class="form-group mb-3">
-                            <label class="font-weight-bold">Contraseña <span class="text-danger">*</span></label>
-                            <input type="password" class="form-control" placeholder="Ingresa una contraseña">
+                            <label class="font-weight-bold">Contrasena <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control" placeholder="Ingresa una contraseña" id="contana"/>
                         </div>
                         <div class="form-group mb-5">
                             <div class="form-check">
@@ -87,7 +86,7 @@
                                 <label class="form-check-label text-muted">Al seleccionar esta casilla aceptas nuestro aviso de privacidad y los términos y condiciones</label>
                             </div>
                         </div>
-                        <button class="btn btn-primary width-100">Regístrate</button>
+                        <button class="btn btn-primary width-100" onclick="registrarUsuario()">Regístrate</button>
                     </form>
     
                 </div>

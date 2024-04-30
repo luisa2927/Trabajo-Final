@@ -94,6 +94,16 @@ body {
     height: 3.125rem;
     font-size: 1em;
 }
+.miboton{
+    width: 50%;
+    height: 3.125rem;
+    border-radius: 10px;
+    border-color: #5e45a1;
+
+}
+.miboton a{
+    font-size: 20px;
+}
 
 .input {
     padding-left: 20px;
