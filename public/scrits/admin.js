@@ -17,14 +17,14 @@ const mostrarUsuarios = async () => {
     }
 
 }
-function mostrarTablas(Usuarios){}
-    const tabla = document.getElementById("miTabla");
-    tabla.innerHTML = "";
-    Usuarios.forEach(usuario => {
-        // por cada usuario(forEach) usuario, me va a crear una fila en la tabla
+function mostrarTablas(Usuarios) { }
+const tabla = document.getElementById("miTabla");
+tabla.innerHTML = "";
+Usuarios.forEach(usuario => {
+    // por cada usuario(forEach) usuario, me va a crear una fila en la tabla
 
-        tabla.innerHTML += 
-        
+    tabla.innerHTML +=
+
         `</tr>
     </thead>
     <tbody class="table.grupo-divisor" id="miTabla">
@@ -39,14 +39,32 @@ function mostrarTablas(Usuarios){}
         </button>
       </tr> `
 
-    });
+});
 
 
 mostrarUsuarios();
 
 
 //funcion para eliminar usuarios por id
-function eliminarUsuario(event){
+function eliminarUsuario(event) {
     console.log("eliminar");
+
+    const idUsuarioEliminar = event.target.id;
+    console.log(idUsuarioEliminar);
+
+    fetch("http://localhost:9000/api/eliminarUsuario/${idUsuarioEliminar}",
+    {method: "DELETE"}) .then(
+        response =>{
+            if(!response.ok){
+                console.error("Error! no se pudo eliminar usuario");
+
+            }else{
+                alert("Usuario eliminado correctamente");
+                mostrarUsuarios();
+            }
+
+        }).catch(error => {
+            console.log("Error! no se pudo eliminar usuario", error);
+        });
 
 }

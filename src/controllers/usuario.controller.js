@@ -32,6 +32,7 @@ export const postUsuario = async(req, res) => {
 
     try{
         let datosUsuario = req.body;
+        console.log(datosUsuario);
         let nuevoUsuario = await usuarioModel.create(datosUsuario);
         return res.json(nuevoUsuario);
 
