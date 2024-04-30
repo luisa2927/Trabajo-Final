@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./estilos/ingreso.css">
 
     <title>Iniciar con</title>
+    <script src="./scrits/ingreso.js"></script>
+
 </head>
 <body>
       <div class="login__container">
@@ -15,12 +17,13 @@
             <h1 class="title">Iniciar sesion</h1>
            
             <form class="inputs-container">
-                <input class="input" type="text" placeholder="Usuario">
-                <input class="input" type="text" placeholder="Contraseña">
+                <input class="input" type="text" placeholder="Usuario"/>
+                <input class="input" type="text" placeholder="Contrasena"/>
                 <button class="btn">Entrar</button>
-                <button class="miboton"><a href="./index.html">Inicio</a></button>
-                <h3>Si no esta registrado vuelve a la pagina de registro</h3>
-                <button class="miboton"><a href="./registro.html">Registro</a></button>
+                <button class="miboton"><a href="./index.html">Inicio</a>
+                
+                <button class="miboton" onclick="IniciarSecion()">Registro</a>
+                </button>
             </form>
           </div>
     
